@@ -12,12 +12,12 @@ const Timer = () => {
         }
         return prevCount - 1;
       });
-      const cleanup = () => {
-        clearInterval(intervalId);
-        console.log("clearid");
-      };
-      return cleanup;
-    }, 1000);S
+    }, 1000);
+    const cleanup = () => {
+      clearInterval(intervalId);
+      console.log("clearid");
+    };
+    return cleanup;
   }, []);
   return (
     <>
